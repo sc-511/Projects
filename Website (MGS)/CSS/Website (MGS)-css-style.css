@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Orbitron');
+body{
+    background-image:url("../Images/Metal%20Gear%20Solid%20Background.jpg") ;
+    
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Audiowide', cursive;
+    
+    
+}
+
+#cover{
+    background-size: cover;
+}
+
+ul {list-style: none;padding: 0px;margin: 0px;}
+  ul li {display: block;position: relative;float: left;border:1px solid #000}
+  li ul {display: none;}
+  ul li a {display: block;background: #b21310;padding: 5px 10px 5px 10px;text-decoration: none;
+           white-space: nowrap;color: #000000;}
+  ul li a:hover {background: #b21310;}
+  li:hover ul {display: block; position: absolute;}
+  li:hover li {float: none;}
+  li:hover a {background: ##b21310;}
+  li:hover li a:hover {background: #ffffff;}
+  #drop-nav li ul li {border-top: 0px;}
+
+h1{
+    text-align: center;
+    font-style: bold;
+    font-size: 3.5em;
+    color:#ffffff;
+}
+
+#wrapper{
+	width:80%;
+	margin-right: auto;
+	margin-left: auto;
+    background-color:#b21b10;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow:5px 5px 5px;}
+
+footer{
+    background-color:#b21310;
+	font-size:.60em;
+	font-style:italic;
+	text-align:center;
+    padding-bottom: 10px;
+    border-top: solid 2px; 
+    border-color: #221811;
+    
+    
+}
+
+p{
+    text-align:left;
+    color:#ffffff;
+}
+h2{
+    color:#ffffff;
+    text-align: left;
+}
+
+h3{
+  color:#ffffff;
+  text-align: center;  
+
+}
+
+h3 p{
+    text-align: center;
+}
+
+div{
+    color:#ffffff;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.txtctr{
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.left{
+    position: relative;
+    float:left;
+    width:45%;
+    padding-right:1.5em;
+    border-right:5px solid #b21310;
+    overflow:auto;
+    
+    height:300px;
+}
+
+.right{
+    position: relative;
+    float:left;
+    width:45%;
+    padding-left:1.5em;
+    overflow:auto;
+    height:300px;
+}
+
+.multi{
+    float: left; width: 150px;
+    
+}
+
+.img{
+    opacity: 0.5;
+    filter: alpha(opacity(opacity=50);
+}
+
+.smalltxt{
+    font-size:.5em;
+    
+}
