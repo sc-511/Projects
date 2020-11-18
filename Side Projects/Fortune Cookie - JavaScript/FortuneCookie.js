@@ -1,11 +1,11 @@
 let userName = 'Shane';
 
-console.log("Welcome to the Magic Eight Ball!");
-console.log("Let the Magic Eight ball choose your destiny");
+console.log("Welcome to the fortune cookie!");
+console.log("Let the fortune cookie choose your destiny");
 
-let magicBallValue = 5;
-let questionToAsk = "Magic Eight Ball what will my future look like?...";
-switch(Math.random() * magicBallValue){
+let fortuneCookieValue = 5;
+let questionToAsk = "What will my future look like?...";
+switch(Math.random() * fortuneCookieValue){
     case 0:
         console.log("It is uncertain....");
         break;
