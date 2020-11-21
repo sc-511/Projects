@@ -17,10 +17,7 @@ function tempConvert(){
      let degreeValue = document.querySelector(".valueInput").value;
      let inputType = document.querySelector("#inputSelector").value;
      let outputType = document.querySelector("#outputSelector").value;
-     let valueOutput = doucument.querySelector("#conversionOutput");
-     //alert(degreeValue + " Converting this value...");
-     //alert(inputType);
-     //alert(outputType);
+     let valueOutput = document.getElementById("conversionOutput");
      const celsiusToFahrenheit = (degreeValue / 5) * (9 + 32);
      const fahrenheitToCelsius = (degreeValue - 32) * (5 / 9);
      const fahrenheitToKelvin = (degreeValue -32) * (5/9) + 273.15;
@@ -29,38 +26,32 @@ function tempConvert(){
      const kelvinToCelsius = (degreeValue - 273.15);
      if(inputType != outputType){
           if(inputType === "Fahrenheit" && outputType === "Celsius"){
-               //alert(fahrenheitToCelsius + " C");
-               doucument.querySelector("#conversionOutput").innerHTML = fahrenheitToCelsius + " C";
-               //return fahrenheitToCelsius;
+               valueOutput.innerText = "Output: " + fahrenheitToCelsius + " C";
           }
           else if (inputType === "Fahrenheit" && outputType === "Kelvin"){
-               alert(fahrenheitToKelvin + " K");
-               return fahrenheitToKelvin;
+              valueOutput.innerText = "Output: " + fahrenheitToKelvin + " K";
           }
           else if (inputType === "Celsius" && outputType === "Fahrenheit"){
-               alert(fahrenheitToFahrenheit + " F");
-               return celsiusToFahrenheit;
+               valueOutput.innerText = "Output: " + celsiusToFahrenheit + " F";
           }
           else if (inputType === "Celsius" && outputType === "Kelvin"){
-               alert(fahrenheitToKelvin + " K");
-               return celsiusToKelvin;
+               valueOutput.innerText = "Output: " + celsiusToKelvin + " K";
           }
           else if (inputType === "Kelvin" && outputType === "Fahrenheit"){
-               alert(fahrenheitToFahrenheit + " F");
-               return kelvinToFahrenheit;
+              valueOutput.innerText = "Output: " + kelvinToFahrenheit + " F";
+               
           }
           else {
-               alert(kelvinToCelsius + " C");
-               return kelvinToCelsius;
+              valueOutput.innerText = "Output: " + kelvinToCelsius + " C";             
           }
      } else{
-          alert(degreeValue);
-          return degreeValue;
+          alert("The value stays the same. You have used the same input and output types!");
      }
 }
 document.addEventListener("DOMContentLoaded", () =>{
      const button = document.getElementById("convertButton");
      button.addEventListener("click", (event) =>{
+          event.preventDefault();
           tempConvert();
      });
 });

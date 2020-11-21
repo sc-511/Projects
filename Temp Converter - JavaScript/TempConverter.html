@@ -10,42 +10,44 @@
     <link rel="icon" href="/images/icon.png">
 </head>
 <body>
-    <header>
-        <h1> Temperature Conversion </h1>
-        <p> Welcome! Please enter in the following information and choose what unit you would like to convert from</p>
-    </header>
-    <main>
-        <form>
-            <div class="form-group">
-                <label> Please enter your value</label>
-                <input type="number" class="valueInput" value = "0">
-            </div>
-            <div class="form-group">
-                <label> Which unit are you starting in?</label>
-                <select id="inputSelector"> 
-                    <option id="inputOption"> Fahrenheit</option>
-                    <option id="inputOption"> Celsius</option>
-                    <option id="inputOption"> Kelvin</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label> Which unit would you like to be converted to?</label>
-                <select id="outputSelector">
-                    <option id="outputOption"> Fahrenheit</option>
-                    <option id="outputOption"> Celsius</option>
-                    <option id="outputOption"> Kelvin</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <button id="convertButton" class="btn btn-dark"> Convert </button>
-            </div>
-            <div>
-                <text id="conversionOutput">  </text>
-            </div>
-        </form>
-    </main>
-    <footer>
-        &copy; Shane Craig 2020
-    </footer>
+    <div id="backgroundImage">
+        <header>
+            <h1> Temperature Conversion </h1>
+            <p> Welcome! Please enter in the following information and choose what unit you would like to convert from</p>
+        </header>
+        <main>
+            <form>
+                <div class="form-group">
+                    <label> Please enter your value</label>
+                    <input type="number" class="valueInput" value = "0">
+                </div>
+                <div class="form-group">
+                    <label> Which unit are you starting in?</label>
+                    <select id="inputSelector"> 
+                        <option id="inputOption"> Fahrenheit</option>
+                        <option id="inputOption"> Celsius</option>
+                        <option id="inputOption"> Kelvin</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label> Which unit would you like to be converted to?</label>
+                    <select id="outputSelector">
+                        <option id="outputOption"> Fahrenheit</option>
+                        <option id="outputOption"> Celsius</option>
+                        <option id="outputOption"> Kelvin</option>
+                    </select>
+                </div>
+                <div>
+                    <text id="conversionOutput">  </text>
+                </div>
+                <div class="form-group">
+                    <button id="convertButton" class="btn btn-dark"> Convert </button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            &copy; Shane Craig 2020
+        </footer>
+    </div>
 </body>
 </html>
