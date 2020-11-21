@@ -1,0 +1,46 @@
+body {
+  background-image: url("/images/backgroundImage.png");
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#nameinput label {
+  color: black;
+  font-weight: bold;
+  font-size: larger;
+}
+
+#nameinput {
+  text-align: center;
+}
+
+header p {
+  font-weight: bold;
+  color: black;
+  font-size: larger;
+}
+
+h4 {
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
