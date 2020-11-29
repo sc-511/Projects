@@ -1,0 +1,41 @@
+#background {
+  background-image: url(/Front-End/img/backgroundImage1.jpg);
+  background-size: auto;
+}
+h1 {
+  color: teal;
+  text-decoration: underline;
+  font-family: "METAG";
+  text-align: center;
+}
+@font-face {
+  font-family: "METAG";
+  src: url(/Front-End/fonts/METAG___.TTF);
+}
+main {
+  color: teal;
+}
+footer {
+  color: teal;
+  text-align: center;
+}
+#kickOff {
+  font-size: larger;
+  text-align: center;
+  font-weight: bold;
+}
+#Fact {
+  text-align: center;
+  padding: 5px;
+}
+#Quote {
+  text-align: center;
+  padding: 5px;
+}
+.moreRandom {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  padding-bottom: 5px;
+}
